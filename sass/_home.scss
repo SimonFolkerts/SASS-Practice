@@ -1,0 +1,47 @@
+// 7. CENTER THE HOME CONTENT
+.home {
+  // center text horizontally
+  text-align: center;
+
+  // center text vertically, keeping it stacked
+  height: 100%;
+
+  //flex it (will cause horizontally spread arrangement)
+  display: flex;
+  //stack it back up vertically
+  flex-direction: column;
+  // center vertically (due to column orientation)
+  justify-content: center;
+
+  // 8. APPLY BACKGROUND
+  background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)),
+    url(https://i.picsum.photos/id/961/800/800.jpg) center top;
+  background-size: cover;
+
+  // 9. STYLE NAME
+  // .home__name, make it big and give underline
+  &__name {
+    // bigger
+    font-size: 5rem;
+    // space it a bit
+    padding-bottom: 1rem;
+
+    // add underline
+    border-bottom: 2px solid #fff;
+    // space the underline a bit
+    margin-bottom: 1rem;
+
+    // .home__name--last
+    &--last {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
+
+// .home {
+//   height: 100%;
+//   padding-top: 40vh;
+//   overflow: hidden;
+//   text-align: center;
+// }

@@ -1,0 +1,80 @@
+@import 'config';
+@import 'home';
+
+
+// 1. MAIN BODY STYLES
+body {
+  // main color and font styles for site and text
+  background-color: $primary-color;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // shrink inter-line gap
+  line-height: 1;
+
+  //body has full height explicitly set TEST THIS
+  height: 100vh;
+}
+
+// 2. HEADER STYLES
+h1, h2, h3 {
+  // slimmer headers
+  font-weight: 400;
+}
+
+// 3. CLEAN UP LINKS
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+// 4. STYLE HEADER
+header {
+  // stick header to top of view
+  position: fixed;
+  // bring to front
+  z-index: 2;
+  // full width
+  width: 100%;
+  padding: 1rem;
+}
+
+//5. STYLE MAIN
+main {
+  // full size
+  height: 100%;
+  width: 100%;
+
+  // stick icons to bottom of view
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      // spread them a bit
+      padding: 0.4rem;
+
+      // add hover effect
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// 6. STYLE FOOTER
+footer {
+  // stick ot to the bottom
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+
+  // to the right
+  text-align: right;
+
+  // space it a bit
+  padding: 1rem;
+
+  // set color
+  color: #fff;
+}
