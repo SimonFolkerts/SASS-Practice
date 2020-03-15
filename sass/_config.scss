@@ -2,8 +2,15 @@
 $primary-color: #272727;
 $secondary-color: #ff652f;
 
+$transition-time: 0.3s;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+// BONUS TRANSITION MIXIN
+@mixin transition {
+  transition: all $transition-time ease-in-out;
 }

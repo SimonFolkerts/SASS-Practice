@@ -1,5 +1,6 @@
 @import 'config';
 @import 'home';
+@import 'menu';
 
 
 // 1. MAIN BODY STYLES
@@ -28,6 +29,9 @@ a {
 }
 
 // 4. STYLE HEADER
+// The header will contain the burger button,
+// and will be fixed to the top of the view.
+// The nav itself will also be fixed and will be an overlay
 header {
   // stick header to top of view
   position: fixed;
@@ -54,6 +58,8 @@ main {
       // spread them a bit
       padding: 0.4rem;
 
+      @include transition;
+
       // add hover effect
       &:hover {
         color: $secondary-color;
@@ -61,6 +67,8 @@ main {
     }
   }
 }
+
+// BONUS CREATE TRANSITION MIXIN IN CONFIG
 
 // 6. STYLE FOOTER
 footer {
