@@ -1,6 +1,7 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'about';
 
 
 // 1. MAIN BODY STYLES
@@ -26,6 +27,10 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: $secondary-color;
 }
 
 // 4. STYLE HEADER

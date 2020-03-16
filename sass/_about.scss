@@ -1,0 +1,68 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    // top half of view
+    height: 50vh;
+    width: 100%;
+
+    // set same background as home
+    background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)),
+      url(https://i.picsum.photos/id/961/800/800.jpg) center top;
+    background-size: cover;
+
+    // center content at bottom of image
+    display: flex;
+    flex-direction: column;
+
+    // this is so that when we shrink the bio it will be centered
+    align-items: center;
+
+    justify-content: flex-end;
+
+    // space text
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // arrange the bio text in the center
+  &__bio {
+    width: 80%;
+    text-align: center;
+
+    // space the header a bit
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+
+
+  .jobs {
+    width: 60%;
+    margin: 0 auto;
+
+    &__job {
+      background: lighten($primary-color, 10%);
+      padding: 0.5rem;
+      margin-top: 2rem;
+      border-bottom: 5px solid $secondary-color;
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+}

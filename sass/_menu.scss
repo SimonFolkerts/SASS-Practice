@@ -99,5 +99,11 @@
       //on hover go secondary-color
       color: $secondary-color;
     }
+
+    //  12. ADD ACTIVE MOD, REMOVE HREF
+    &--active {
+      cursor: default;
+      color: $secondary-color;
+    }
   }
 }
